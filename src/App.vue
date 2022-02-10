@@ -1,19 +1,24 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+   <h1>TODO APP</h1>
+      <div class="card">
+        <router-link to="/todo">TODO</router-link>
+      </div>
+      <div class="card">
+        <router-link to="/users">LIST OF USERS</router-link>
+      </div>
+      <div class="card">
+        <router-view></router-view>
+      </div>
+  <footer class="card1"><h3>This is footer</h3></footer>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
   }
-}
 </script>
 
 <style>
@@ -24,5 +29,12 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  
+}
+.card{
+  margin-top: 20px;
+}
+.card1{
+  margin-top: 150px;
 }
 </style>
